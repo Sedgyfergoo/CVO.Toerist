@@ -1,20 +1,60 @@
-import React, {Component, Fragment} from 'react';
-import Region from '../components/region/Region';
+import React, { Component, Fragment } from "react";
+import Region from "../components/region/Region";
 
+// Dit is eigenlijk wat er uiteindelijk in de database zit en van backend komt
 const images = [
-    "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Capitol_Building_Full_View.jpg/1920px-Capitol_Building_Full_View.jpg",
-    "https://lekkerweglekkerthuis.ah.nl/media/images/products/2018/09/New_York.jpg"
-]
+  //array gemaakt zodat er in het component geen belachelijk lange url's komen te staan
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Flag_of_Washington.svg/1920px-Flag_of_Washington.svg.png",
+  "https://www.rome2rio.com/wp-content/uploads/2017/06/New_York_NYC-2.jpg"
+];
+const regions = [
+  {
+    id: 0,
+    name: "Washington"
+  },
+  {
+    id: 1,
+    name: "New York"
+  }
+];
 
-class RegionPage extends Component{
-    render(){
-        return(
-            <Fragment>
-                <Region name="Washington" image={images[0]} />
+class RegionPage extends Component {
+  // We zetten initieel de active region id op 0 omdat we niet willen dat onze applicatie crasht
+  state = {
+    activeRegionId: 0
+  };
 
-            </Fragment>
-        );
+  componentDidMount() {
+    // Kijken met 'match' (dat via bovenliggende router (App.js) bij de props gestoken)
+    // Gaan kijken of er een id meegegeven is, al dan niet
+    const regionId = this.props.match.params.id;
+
+    if (regionId !== undefined) {
+      this.setState({ activeRegionId: regionId });
     }
+  }
+
+  handleClick = id => {
+    return console.log(id);
+  };
+
+  render() {
+    // We halen active id uit onze staat, dit hebben we nodig om uit onze data de specifiek regio te nemen
+    const { activeRegionId } = this.state;
+
+    return (
+      //fragement is hetzelfde als div maar maakt niets in de DOM.
+      <Fragment>
+        <Region
+          name={regions[activeRegionId].name}
+          id={regions[activeRegionId].id}
+          image={images[activeRegionId]}
+          enterText="ENTER"
+          onClick={this.handleClick}
+        />
+      </Fragment>
+    );
+  }
 }
 
 export default RegionPage;
