@@ -46,6 +46,7 @@ class RegionPage extends Component {
       //fragement is hetzelfde als div maar maakt niets in de DOM.
       <Fragment>
         <Region
+          navText={regions[activeRegionId].name + " attractions"}
           name={regions[activeRegionId].name}
           id={regions[activeRegionId].id}
           image={images[activeRegionId]}

@@ -1,214 +1,214 @@
 {
-    "region" : [
+  "region": [
+    {
+      "id": 0,
+      "name": "Washington",
+      "description": "Some info about Washington",
+      "latitude": "",
+      "longitude": "",
+      "image": "",
+      "pois": [
         {
-            "id" : 0,
-            "name": "Washington",
-            "description": "Some info about Washington",
-            "latitude" : "",
-            "longitude" : "",
-            "image" : "",
-            "pois": [
-                {
-                    "id" : 1,
-                    "name": "Washington",
-                    "description": "Some info about Washington",
-                    "latitude" : "",
-                    "longitude" : "",
-                    "image" : ""
-                },
-                {
-                    "id" : 0,
-                    "name": "Washington",
-                    "description": "Some info about Washington",
-                    "latitude" : "",
-                    "longitude" : "",
-                    "image" : ""
-                },
-                {
-                    "id" : 0,
-                    "name": "Washington",
-                    "description": "Some info about Washington",
-                    "latitude" : "",
-                    "longitude" : "",
-                    "image" : ""
-                },
-                {
-                    "id" : 0,
-                    "name": "Washington",
-                    "description": "Some info about Washington",
-                    "latitude" : "",
-                    "longitude" : "",
-                    "image" : ""
-                },
-                {
-                    "id" : 0,
-                    "name": "Washington",
-                    "description": "Some info about Washington",
-                    "latitude" : "",
-                    "longitude" : "",
-                    "image" : ""
-                },
-                {
-                    "id" : 0,
-                    "name": "Washington",
-                    "description": "Some info about Washington",
-                    "latitude" : "",
-                    "longitude" : "",
-                    "image" : ""
-                },
-                {
-                    "id" : 0,
-                    "name": "Washington",
-                    "description": "Some info about Washington",
-                    "latitude" : "",
-                    "longitude" : "",
-                    "image" : ""
-                },
-                {
-                    "id" : 0,
-                    "name": "Washington",
-                    "description": "Some info about Washington",
-                    "latitude" : "",
-                    "longitude" : "",
-                    "image" : ""
-                },
-                {
-                    "id" : 0,
-                    "name": "Washington",
-                    "description": "Some info about Washington",
-                    "latitude" : "",
-                    "longitude" : "",
-                    "image" : ""
-                },
-                {
-                    "id" : 0,
-                    "name": "Washington",
-                    "description": "Some info about Washington",
-                    "latitude" : "",
-                    "longitude" : "",
-                    "image" : ""
-                },
-                {
-                    "id" : 0,
-                    "name": "Washington",
-                    "description": "Some info about Washington",
-                    "latitude" : "",
-                    "longitude" : "",
-                    "image" : ""
-                },
-                {
-                    "id" : 0,
-                    "name": "Washington",
-                    "description": "Some info about Washington",
-                    "latitude" : "",
-                    "longitude" : "",
-                    "image" : ""
-                },
-                {
-                    "id" : 0,
-                    "name": "Washington",
-                    "description": "Some info about Washington",
-                    "latitude" : "",
-                    "longitude" : "",
-                    "image" : ""
-                },
-                {
-                    "id" : 0,
-                    "name": "Washington",
-                    "description": "Some info about Washington",
-                    "latitude" : "",
-                    "longitude" : "",
-                    "image" : ""
-                },
-                {
-                    "id" : 0,
-                    "name": "Washington",
-                    "description": "Some info about Washington",
-                    "latitude" : "",
-                    "longitude" : "",
-                    "image" : ""
-                },
-                {
-                    "id" : 0,
-                    "name": "Washington",
-                    "description": "Some info about Washington",
-                    "latitude" : "",
-                    "longitude" : "",
-                    "image" : ""
-                },
-                {
-                    "id" : 0,
-                    "name": "Washington",
-                    "description": "Some info about Washington",
-                    "latitude" : "",
-                    "longitude" : "",
-                    "image" : ""
-                },
-                {
-                    "id" : 0,
-                    "name": "Washington",
-                    "description": "Some info about Washington",
-                    "latitude" : "",
-                    "longitude" : "",
-                    "image" : ""
-                },
-                {
-                    "id" : 0,
-                    "name": "Washington",
-                    "description": "Some info about Washington",
-                    "latitude" : "",
-                    "longitude" : "",
-                    "image" : ""
-                },
-                {
-                    "id" : 0,
-                    "name": "Washington",
-                    "description": "Some info about Washington",
-                    "latitude" : "",
-                    "longitude" : "",
-                    "image" : ""
-                },
-                {
-                    "id" : 0,
-                    "name": "Washington",
-                    "description": "Some info about Washington",
-                    "latitude" : "",
-                    "longitude" : "",
-                    "image" : ""
-                },
-                {
-                    "id" : 0,
-                    "name": "Washington",
-                    "description": "Some info about Washington",
-                    "latitude" : "",
-                    "longitude" : "",
-                    "image" : ""
-                },
-                {
-                    "id" : 0,
-                    "name": "Washington",
-                    "description": "Some info about Washington",
-                    "latitude" : "",
-                    "longitude" : "",
-                    "image" : ""
-                },
-                {
-                    "id" : 0,
-                    "name": "Washington",
-                    "description": "Some info about Washington",
-                    "latitude" : "",
-                    "longitude" : "",
-                    "image" : ""
-                },
-                {
-                    "id" : 0,
-                    "name": "Washington",
-                    "description": "Some info about Washington",
-                    "latitude" : "",
-                    "longitude" : "",
-                    "image" : ""
-                }
-            ]
+          "id": 0,
+          "name": "US Capitole",
+          "description": "Some info about Washington",
+          "latitude": "38.8899431",
+          "longitude": "-77.009029",
+          "image": ""
+        },
+        {
+          "id": 1,
+          "name": "Lincoln Memorial",
+          "description": "Some info about Washington",
+          "latitude": "38.8892728",
+          "longitude": "-77.0523647",
+          "image": ""
+        },
+        {
+          "id": 2,
+          "name": "Washington Monument",
+          "description": "Some info about Washington",
+          "latitude": "38.8894583",
+          "longitude": "77.0373601",
+          "image": ""
+        },
+        {
+          "id": 3,
+          "name": "The White House",
+          "description": "Some info about Washington",
+          "latitude": "38.8976805",
+          "longitude": "-77.0387185",
+          "image": ""
+        },
+        {
+          "id": 4,
+          "name": "Smithsonian Institution",
+          "description": "Some info about Washington",
+          "latitude": "38.897701",
+          "longitude": "-77.0452846",
+          "image": ""
+        },
+        {
+          "id": 5,
+          "name": "National Museum of African American History and Culture",
+          "description": "Some info about Washington",
+          "latitude": "38.8910686",
+          "longitude": "-77.0348027",
+          "image": ""
+        },
+        {
+          "id": 6,
+          "name": "Jefferson Memorial",
+          "description": "Some info about Washington",
+          "latitude": "38.8813848",
+          "longitude": "-77.0386423",
+          "image": ""
+        },
+        {
+          "id": 7,
+          "name": "National Air and Space Museum",
+          "description": "Some info about Washington",
+          "latitude": "38.8881643",
+          "longitude": "-77.0220566",
+          "image": ""
+        },
+        {
+          "id": 8,
+          "name": "National Gallery of Art",
+          "description": "Some info about Washington",
+          "latitude": "38.8913022",
+          "longitude": "-77.0221537",
+          "image": ""
+        },
+        {
+          "id": 9,
+          "name": "Smithsonian National Zoological Park",
+          "description": "Some info about Washington",
+          "latitude": "38.9296198,",
+          "longitude": "-77.0519731",
+          "image": ""
+        },
+        {
+          "id": 10,
+          "name": "National Museum of Natural History",
+          "description": "Some info about Washington",
+          "latitude": "38.8912704",
+          "longitude": "-77.0282541",
+          "image": ""
+        },
+        {
+          "id": 11,
+          "name": "Ford's Theatre",
+          "description": "Some info about Washington",
+          "latitude": "38.8966742",
+          "longitude": "-77.0278574",
+          "image": ""
+        },
+        {
+          "id": 12,
+          "name": "National World War II Memorial",
+          "description": "Some info about Washington",
+          "latitude": "38.8865566",
+          "longitude": "-77.0351466",
+          "image": ""
+        },
+        {
+          "id": 13,
+          "name": "Pentagon",
+          "description": "Some info about Washington",
+          "latitude": "38.8679636",
+          "longitude": ",-77.0614433",
+          "image": ""
+        },
+        {
+          "id": 14,
+          "name": "Washington National Cathedral",
+          "description": "Some info about Washington",
+          "latitude": "38.9305988",
+          "longitude": "-77.0729695",
+          "image": ""
+        },
+        {
+          "id": 15,
+          "name": "National Portrait Gallery",
+          "description": "Some info about Washington",
+          "latitude": "38.8986366",
+          "longitude": "-77.025925",
+          "image": ""
+        },
+        {
+          "id": 16,
+          "name": "National Portrait Gallery",
+          "description": "Some info about Washington",
+          "latitude": "38.8986324",
+          "longitude": ",-77.025925",
+          "image": ""
+        },
+        {
+          "id": 17,
+          "name": "Washington",
+          "description": "Some info about Washington",
+          "latitude": "",
+          "longitude": "",
+          "image": ""
+        },
+        {
+          "id": 18,
+          "name": "Washington",
+          "description": "Some info about Washington",
+          "latitude": "",
+          "longitude": "",
+          "image": ""
+        },
+        {
+          "id": 19,
+          "name": "Washington",
+          "description": "Some info about Washington",
+          "latitude": "",
+          "longitude": "",
+          "image": ""
+        },
+        {
+          "id": 20,
+          "name": "Washington",
+          "description": "Some info about Washington",
+          "latitude": "",
+          "longitude": "",
+          "image": ""
+        },
+        {
+          "id": 21,
+          "name": "Washington",
+          "description": "Some info about Washington",
+          "latitude": "",
+          "longitude": "",
+          "image": ""
+        },
+        {
+          "id": 22,
+          "name": "Washington",
+          "description": "Some info about Washington",
+          "latitude": "",
+          "longitude": "",
+          "image": ""
+        },
+        {
+          "id": 23,
+          "name": "Washington",
+          "description": "Some info about Washington",
+          "latitude": "",
+          "longitude": "",
+          "image": ""
+        },
+        {
+          "id": 24,
+          "name": "Washington",
+          "description": "Some info about Washington",
+          "latitude": "",
+          "longitude": "",
+          "image": ""
         }
-    ]
+      ]
+    }
+  ]
 }
