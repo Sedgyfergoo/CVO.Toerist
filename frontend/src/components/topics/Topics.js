@@ -1,6 +1,8 @@
 import React, { Component } from "react";
+import dataTopics from "../../../public/data/data.json";
 
 class Topics extends Component {
+  data = dataTopics;
   render() {
     return (
       <div>

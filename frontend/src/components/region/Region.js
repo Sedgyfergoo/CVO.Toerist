@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 class Region extends Component {
   render() {
-    const { id, name, image, enterText, onClick, headerText } = this.props;
+    const { id, name, image, enterText, onClick, navText } = this.props;
 
     return (
       <Fragment>
