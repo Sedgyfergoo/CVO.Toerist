@@ -8,6 +8,7 @@ const images = [
   "https://www.rome2rio.com/wp-content/uploads/2017/06/New_York_NYC-2.jpg"
 ];
 const regions = [
+  //mochten we meer regions willen maken, momenteel enkel washington.
   {
     id: 0,
     name: "Washington"
@@ -29,14 +30,11 @@ class RegionPage extends Component {
     // Gaan kijken of er een id meegegeven is, al dan niet
     const regionId = this.props.match.params.id;
 
+
     if (regionId !== undefined) {
       this.setState({ activeRegionId: regionId });
     }
   }
-
-  handleClick = id => {
-    return console.log(id);
-  };
 
   render() {
     // We halen active id uit onze staat, dit hebben we nodig om uit onze data de specifiek regio te nemen
@@ -50,8 +48,7 @@ class RegionPage extends Component {
           name={regions[activeRegionId].name}
           id={regions[activeRegionId].id}
           image={images[activeRegionId]}
-          enterText="ENTER"
-          onClick={this.handleClick}
+
         />
       </Fragment>
     );

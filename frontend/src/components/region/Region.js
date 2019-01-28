@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 class Region extends Component {
   render() {
-    const { id, name, image, enterText, onClick, navText } = this.props;
+    const { name, image, navText } = this.props;
 
     return (
       <Fragment>
@@ -12,14 +12,7 @@ class Region extends Component {
         <img className="region-img" alt="region" src={image} />
         <br />
         <NavLink to="/region/:id/topics">{navText}</NavLink>
-        <button
-          type="button"
-          onClick={() => {
-            onClick(id);
-          }}
-        >
-          {enterText}
-        </button>
+
       </Fragment>
     );
   }
