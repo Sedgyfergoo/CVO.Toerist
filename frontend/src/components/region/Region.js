@@ -12,7 +12,6 @@ class Region extends Component {
         <img className="region-img" alt="region" src={image} />
         <br />
         <NavLink to="/region/:id/topics">{navText}</NavLink>
-
       </Fragment>
     );
   }

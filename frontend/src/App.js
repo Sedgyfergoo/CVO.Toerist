@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import RegionPage from "./scenes/RegionPage";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Topics from "./components/topics/Topics";
+import TopicsPage from "./scenes/TopicsPage";
 
 class App extends Component {
   render() {
@@ -12,7 +12,7 @@ class App extends Component {
           <div>
             <Route path="/regions" exact component={RegionPage} />
             <Route path="/region/:id" exact component={RegionPage} />
-            <Route path="/region/:id/topics" exact component={Topics} />
+            <Route path="/region/:id/topics" exact component={TopicsPage} />
           </div>
         </Router>
       </div>
