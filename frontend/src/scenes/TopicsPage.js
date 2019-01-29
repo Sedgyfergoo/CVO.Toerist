@@ -1,29 +1,31 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import Topics from "../components/topics/Topics";
 import dataTopics from "../data/data.json";
-
-const WrappedLink = () => {
-  return (
-    <button>
-      <navlink to="/region/0">{"Back Home"}</navlink>
-    </button>
-  );
-};
+import { NavLink } from 'react-router-dom';
 
 class TopicsPage extends Component {
   render() {
     const data = dataTopics.region[0].pois;
-    console.log(data);
+    const regionId = this.props.match.params.id;
+
 
     return (
-      <fragment>
-        <WrappedLink />
-        <div>
+      <Fragment>
+        <NavLink to={`/region/${regionId}`}>
+          <button>Home</button>
+        </NavLink>
+        <div className="list-items">
           {data.map(row => {
-            return <Topics TopicName={row.name} TopicImage={row.image} />;
+            return (
+              <Topics key={row.id}
+                RegionId={regionId}
+                TopicId={row.id}
+                TopicName={row.name}
+                TopicImage={row.image}
+              />);
           })}
         </div>
-      </fragment>
+      </Fragment >
     );
   }
 }

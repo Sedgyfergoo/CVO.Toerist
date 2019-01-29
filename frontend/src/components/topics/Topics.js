@@ -1,16 +1,23 @@
 import React, { Component } from "react";
-
 import "./topic.css";
+import { NavLink } from 'react-router-dom';
+
 
 class Topics extends Component {
   render() {
-    const { TopicName, TopicImage } = this.props;
+    const { TopicName, RegionId, TopicImage, TopicId } = this.props;
+
     return (
-      <div>
-        <h3>{TopicName}</h3>
-        <img src={TopicImage} alt={TopicName} />
+      <div className="list-item">
+        <img className="region-img2" src={TopicImage} alt={TopicName} />
+        <p>{TopicName}</p>
+
+        <NavLink to={`/region/${RegionId}/topics/${TopicId}`}>
+          <button className="detailsButton">Details</button>
+        </NavLink>
       </div>
     );
+
   }
 }
 
