@@ -4,14 +4,14 @@ import { Map as LeafletMap, TileLayer, Marker, Popup } from "react-leaflet";
 
 export default class Map extends Component {
   render() {
-    const { latitude, longitude } = this.props;
+    const { center } = this.props;
 
     return (
       <Fragment>
         <LeafletMap
-          center={[latitude, longitude]}
-          zoom={1}
-          maxZoom={10}
+          center={center}
+          zoom={14}
+          maxZoom={200}
           attributionControl={true}
           zoomControl={true}
           doubleClickZoom={true}
@@ -20,9 +20,7 @@ export default class Map extends Component {
           animate={true}
           easeLinearity={0.35}
         >
-          <TileLayer
-            url='http://{s}.tile.osm.org/{z}/{x}/{y}.png'
-          />
+          <TileLayer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png" />
         </LeafletMap>
       </Fragment>
     );
