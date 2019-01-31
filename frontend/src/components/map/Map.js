@@ -4,7 +4,7 @@ import { Map as LeafletMap, TileLayer, Marker, Popup } from "react-leaflet";
 
 export default class Map extends Component {
   render() {
-    const { center } = this.props;
+    const { center, name } = this.props;
 
     return (
       <Fragment>
@@ -21,6 +21,11 @@ export default class Map extends Component {
           easeLinearity={0.35}
         >
           <TileLayer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png" />
+          <Marker position={center}>
+            <Popup>
+              <h3>{name}</h3>
+            </Popup>
+          </Marker>
         </LeafletMap>
       </Fragment>
     );

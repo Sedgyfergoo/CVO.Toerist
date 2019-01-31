@@ -12,14 +12,15 @@
 
 }
 
-p{
-    margin-top: 5%;
+.detailText{
+   
+    margin-top: 70px;
     width: 50%;
 }
 
 .detailsButton{
     margin-top: 50px;
-    height: 4vh;
+    height: 7vh;
     width: 16vh;
 
 }
