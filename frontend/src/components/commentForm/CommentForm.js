@@ -1,9 +1,20 @@
 import React, { Component } from 'react';
+import SingleComment from './SingleComment';
+
 
 //How to properly get value of an input field in react 
 //https://stackoverflow.com/questions/36683770/how-to-get-the-value-of-an-input-field-using-reactjs
 
+const comment = (props) => {
+    return (
+        <div className="Comment">
+            <p>{props.comment}</p>
+        </div>
+    )
+}
+
 export default class CommentForm extends Component {
+    //constructor(props) daarna super(props) 
     constructor(props) {
         super(props);
         this.state = {
@@ -13,13 +24,13 @@ export default class CommentForm extends Component {
     //array aanmaken in state om comments er in te kunnen pushen
 
     //elke keer er iets wordt getypt wordt dit gefired.
-    updateInputValue = (e) => {
-        this.setState({
-            comments: e.target.value
+    // updateInputValue = (e) => {
+    //     this.setState({
+    //         comments: e.target.value
 
-        });
+    //     });
 
-    }
+    // }
 
     //als er geklikt wordt kijken naar wat er in input zit
     handleClick = (e) => {
@@ -35,6 +46,7 @@ export default class CommentForm extends Component {
 
 
 
+
     render() {
 
         return (
@@ -47,6 +59,15 @@ export default class CommentForm extends Component {
                     onClick={this.handleClick}>
                     Add
                 </button>
+                {/* <SingleComment comment={this.state.comments} /> */}
+                {this.state.comments.map(item => {
+                    return (
+                        <table>
+                            <tr>{item.comments}</tr>
+                        </table>
+                    );
+                })}
+
 
             </form>
         )

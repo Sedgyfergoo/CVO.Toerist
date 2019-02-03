@@ -2,7 +2,7 @@
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    width: 60%;
+    width: 80%;
     border: solid #ccc 1px;
     padding: 10px;
 }
@@ -12,10 +12,15 @@
 
 }
 
-.detailText{
-   
-    margin-top: 70px;
-    width: 50%;
+.detailTextTopics{
+   position: relative;
+   right: 18%;
+   top: 30px;
+   width: 30%;
+   margin-left: 33%;
+   margin-top: 50px;   
+   margin-bottom: 50px;
+    
 }
 
 .detailsButton{

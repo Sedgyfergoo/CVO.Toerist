@@ -10,7 +10,7 @@ class Topics extends Component {
     return (
       <div className="list-item">
         <img className="region-img2" src={TopicImage} alt={TopicName} />
-        <p className="detailText">{TopicName}</p>
+        <p className="detailTextTopics">{TopicName}</p>
 
         <NavLink to={`/region/${RegionId}/topics/${TopicId}`}>
           <button className="detailsButton">Details</button>
