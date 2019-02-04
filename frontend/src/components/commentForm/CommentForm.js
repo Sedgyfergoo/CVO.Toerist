@@ -1,41 +1,41 @@
 import React, { Component } from 'react';
-import SingleComment from './SingleComment';
+import "./commentForm.css"
+
 
 
 //How to properly get value of an input field in react 
 //https://stackoverflow.com/questions/36683770/how-to-get-the-value-of-an-input-field-using-reactjs
 
-const comment = (props) => {
-    return (
-        <div className="Comment">
-            <p>{props.comment}</p>
-        </div>
-    )
-}
 
 export default class CommentForm extends Component {
     //constructor(props) daarna super(props) 
+    //Je gebruikt de constructor om de methode te binden.
     constructor(props) {
         super(props);
         this.state = {
-            comments: []
-        }
+            comments: [],
+            value: ''
+        };
+        this.handleChange = this.handleChange.bind(this);
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    //elke keer als er iets getypt wordt, wordt dit gefired.
+    handleChange(e) {
+        this.setState({ value: e.target.value });
+
     }
 
     //als er geklikt wordt kijken naar wat er in input zit
     handleClick = (e) => {
+        let comment = this.state.comments.concat(this.state.value)
 
         this.setState({
-            comments: e.target.value,
-
+            comments: comment,
+            value: ''
         });
-        //hier zit ik vast, ik heb de data, nu nog renderen er onder.
-        console.log(this.state.comments);
 
     }
-
-
-
 
     render() {
 
@@ -43,22 +43,26 @@ export default class CommentForm extends Component {
             <form>
                 <h2>{"Comments"}</h2>
                 <label for="comment">{"Please leave a message"} </label> <br />
-                <input id="comment" type="text" value={this.state.inputValue} onChange={this.updateInputValue} />
+                <input id="comment" type="text" value={this.state.value} onChange={this.handleChange} />
                 <button
                     type="button"
                     onClick={this.handleClick}>
                     Add
                 </button>
-                {/* <SingleComment comment={this.state.comments} /> */}
-                {this.state.comments.map(item => {
-                    return (
-                        <table>
-                            <tr>{item.comments}</tr>
-                        </table>
-                    );
-                })}
-
-
+                <table className="addedComment">
+                    <tr>
+                        <th>Id</th>
+                        <th>Comment</th>
+                    </tr>
+                    {this.state.comments.map((row, i) => {
+                        return (
+                            <tr>
+                                <td>{i}</td>
+                                <td>{row}</td>
+                            </tr>
+                        );
+                    })}
+                </table>
             </form>
         )
     }

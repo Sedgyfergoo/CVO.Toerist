@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './topicDetail.css'
 
 class TopicDetail extends Component {
     state = {
@@ -9,7 +10,7 @@ class TopicDetail extends Component {
         return (
             <div>
                 <h1>{DetailName}</h1>
-                <img src={DetailImage} alt={DetailName} />
+                <img className="topicDetailImage" src={DetailImage} alt={DetailName} />
                 <div className="detailText">
                     <h4>{"Beschrijving"}</h4>
                     <p>{DetailText}</p>

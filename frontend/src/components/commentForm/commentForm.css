@@ -1,0 +1,27 @@
+table.addedComment{
+    
+    margin: auto;
+        
+}
+
+
+table{
+    min-width: 400px;
+    text-align: left;
+    
+}
+table, th{
+    text-align: center;
+}
+table,td{
+    padding-left: 30px;
+    padding-top: 5px;
+    text-align: left;
+}
+
+form {
+    position: relative;
+    right: 400px;
+    bottom: 400px;
+    float: right;
+}
