@@ -21,16 +21,6 @@ export default class CommentForm extends Component {
             comments: []
         }
     }
-    //array aanmaken in state om comments er in te kunnen pushen
-
-    //elke keer er iets wordt getypt wordt dit gefired.
-    // updateInputValue = (e) => {
-    //     this.setState({
-    //         comments: e.target.value
-
-    //     });
-
-    // }
 
     //als er geklikt wordt kijken naar wat er in input zit
     handleClick = (e) => {
